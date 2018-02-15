@@ -16,12 +16,12 @@
 </head>
 <body>
 
-  <header>
-    <img src="images/lighthouse-1992778_1280.png" alt="The site logo">
-      <h1>
-          The Weather sentinel
-      </h1>
-    <div class="subheading">Guarding your way</div>
+  <header class="clearfix">
+    <figure class="logo">
+    <img src="images/lighthouse-1992778_1280.png" alt="The site logo" >
+    </figure>
+    <h1>The Weather sentinel</h1>
+    <h2 class="subheading">Whatching your way</h2>
   </header>
 
   <!-- site navigation use placeholder references -->
@@ -38,31 +38,30 @@
   </nav>
     
   <main>
-      <section class="weatherimg">
-    <h2>Franklin</h2>
+    <h2 class="clearfix">The City of Franklin</h2>
     <figure>
-      <img src="images/IMG-20180212-WA0000.jpg" alt="weather img">
+      <img src="images/IMG-20180212-WA0000.jpg" alt="weather image">
     </figure>
-      </section>
-    <section class="summary">
-        <h3>Summary</h3>
+    <section>
+      <h3>Weather Summary</h3>    
       <div class="highlow">
-        <p>High:<span>90&#8728;F</span></p>  
-        <p>Low:<span>66&#8728;F</span></p>  
-      </div>
-      <div class="current" >
-          <p>Sunny
-            <img src="images/images.png" alt="">
-          </p>
+        <p>High: <span>90&#8728;F</span></p>  
+        <p>Low: <span>66&#8728;F</span></p>  
+       </div>
+      <div class="current">
+        <p>Sunny</p>
+        <picture>
+            <img src="images/images.png" alt="current" >
+        </picture>
       </div>   
       <div class="conditions">
         <p>Precipitation:<span>0%</span></p>  
-        <p>Wind Speed:<span>5 mpg SW</span></p>  
+        <p>Wind Speed:<span>5 mpg SW</span></p>
       </div>           
     </section>
         
-    <section class="forecast" >
-        <h3>Forecast</h3>
+    <section class="forecast">
+       <h3>Forecast</h3>
       <table>
 	    <thead>
             <tr>
@@ -96,23 +95,21 @@
           </tr>
 		</tbody>
       </table>
-    </section>
+      </section>
       
     <article>
-      <h3>Franklin Breaks Record</h3>	
+      <h2>Franklin Breaks Record</h2>	
       <p class="town-article">
-          <img src="images/Franklin-wilkins.jpg" alt="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum mauris eget vehicula luctus. Integer pharetra semper pellentesque. Phasellus mollis erat id justo convallis, facilisis consectetur velit vestibulum. Integer facilisis tellus vel scelerisque vehicula. Duis sodales, ipsum ac varius dapibus, mi mauris tristique augue, ac viverra sem lectus quis ligula. Donec luctus ultrices massa. Praesent tincidunt nisl dapibus lectus commodo, at fermentum lacus commodo.
-          
-        
-          </p>
-      
+        <img src="images/IMG-20180212-WA0001.jpg" alt="weather improvement illustration" >
+        A parent class represents a higher level of abstraction than the child because the child is a more specific version of the parent.  When there are several levels of inheritance, the number of levels of abstraction can become quite complex.  One design consideration when working with object relationships is to try to make the levels of abstraction consistent and meaningful.  Possibly the best example of this is the major taxonomic levels of living things such as plants and animals.  This taxonomy, called the Linnaean taxonomic system (from Carolus Linnaeus 1707-1778 who described it in 1735), consists of seven major divisions: {Kingdom, Phylum, Class, Order, Family, Genus, Species}. There are two aspects of this taxonomy: hierarchy and rank.  Hierarchy is preserved because the lower you go in the taxonomy the more similar the organism.  Members of a Species, for example, are guaranteed to be more similar than members of a Genus.  The second, rank, relates to the layers of abstraction.  The level of specificity for definition of a Species is consistent across the taxonomy. In other words, the requirements for creating a new Species is the same across all Genera of the taxonomy. Consider the levels of abstraction in our GUI example. If done correctly, each level should mean something. Changes made to the hierarchy contrary to the layers of abstraction are likely to compromise any benefit of the abstraction in the first place.
+      </p>
 		</article>		  
+  
   </main>
     
   <footer>
     <aside>
-      Contact information placeholder
+      East Cesar Chavez, 34 70204 - Austin TX weathercrew@email.com
     </aside>
     <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
