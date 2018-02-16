@@ -10,8 +10,25 @@
     
    nav ul {margin-left: 2%;}
     nav ul li {width: auto;}
+    nav ul.hide {display:block}
+    nav ul li a
+    {
+        padding: .5rem 1rem;
+        border: none;
+        border-right: 1px solid rgb(0,0,0,0.3);
+    }
+    nav ul li 
+{
+    float: left;
+    width: 15%;
+}
 
-    nav ul li a{padding: .5rem 1rem;}
     
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 }
