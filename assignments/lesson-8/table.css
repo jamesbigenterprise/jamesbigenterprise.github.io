@@ -1,6 +1,6 @@
 html {
 
-  font-family: ubuntu, sans-serif;
+  font-family: 'ubuntu', sans-serif;
 
 }
 
@@ -39,7 +39,6 @@ td, th {
 	background-color: #7fb9c2; 
 	color: black;
 	font-size: 1.5rem;
-	text-shadow: 
 }
 
 
