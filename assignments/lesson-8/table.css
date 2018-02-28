@@ -21,7 +21,9 @@ table {
 
 }
 
-
+tr:nth-child(6) td:nth-child(3){
+	background-color: #628ca6;
+}
 
 
 td, th {
