@@ -67,6 +67,9 @@ tr:nth-child(odd) td {
 
   background-color: #e7ffed;
 }
+tr:nth-child(7) td:nth-child(1){
+	font-style: italic;
+}
 tr:last-of-type td:last-of-type{
 	background-color: #7fb9c2;
 }
