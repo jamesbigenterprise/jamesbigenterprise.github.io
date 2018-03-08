@@ -60,32 +60,3 @@ Object3.onload = function()
 } // end of onload
 
 
-var weatherObject0 = new XMLHttpRequest();
-
-weatherObject0.open('GET', 'https://byui-cit230.github.io/weather/data/towndata.json', 'true');
-
-weatherObject0.send();
-
-weatherObject0.onload = function()
-{
-	var weatherInfo0 = JSON.parse(weatherObject0.responseText);
-	console.log(weatherInfo0);
-	
-	document.getElementById('moto1').innerHTML = weatherInfo0.towns["0"].motto;
-	document.getElementById('moto2').innerHTML = weatherInfo0.towns["1"].motto;
-	document.getElementById('moto3').innerHTML = weatherInfo0.towns["3"].motto;
-	
-	document.getElementById('1founded').innerHTML = weatherInfo0.towns["0"].yearFounded;
-	document.getElementById('1pop').innerHTML = weatherInfo0.towns["0"].currentPopulation;
-	document.getElementById('1rFall').innerHTML = weatherInfo0.towns["0"].averageRainfall;
-	
-	document.getElementById('2founded').innerHTML = weatherInfo0.towns["1"].yearFounded;
-	document.getElementById('2pop').innerHTML = weatherInfo0.towns["1"].currentPopulation;
-	document.getElementById('2rFall').innerHTML = weatherInfo0.towns["1"].averageRainfall;
-	
-	document.getElementById('3founded').innerHTML = weatherInfo0.towns["2"].yearFounded;
-	document.getElementById('3pop').innerHTML = weatherInfo0.towns["2"].currentPopulation;
-	document.getElementById('3rFall').innerHTML = weatherInfo0.towns["2"].averageRainfall;
-
-
-}
