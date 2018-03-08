@@ -1,0 +1,51 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+  section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+    
+   nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul.hide {display:block}
+    nav ul li a
+    {
+        padding: .5rem 1rem;
+        border: none;
+        border-right: 1px solid rgb(0,0,0,0.3);
+    }
+    nav ul li 
+{
+    float: left;
+    width: 15%;
+}
+
+	.wrapper {
+
+  grid-template-columns: 50% 50%;
+}
+.wrapperHome {
+ display: grid;
+}
+/**grid-row-start / grid-column-start / grid-row-end / grid-column-end.**/	
+.topleft { grid-area: 1 / 1 /1;}
+.topright{ grid-area: 1 / 2 /1;}
+.top1    { grid-area: 2 ;}
+.top2    { grid-area: 3 ;}
+.top3    { grid-area: 4 ;}
+.bottom1 { grid-area: 2 ;}
+.bottom2 { grid-area: 3 ;}
+.bottom3 { grid-area: 4 ;}
+
+    
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}

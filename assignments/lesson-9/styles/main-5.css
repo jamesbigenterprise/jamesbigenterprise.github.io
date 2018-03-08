@@ -1,0 +1,336 @@
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+  font-family: 'Montserrat', sans-serif;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+
+
+header 
+{
+    padding: .5rem 2%;
+    background-color: blue;
+    width: 100%;
+}
+header h1 
+{
+    margin:0;
+	color: aliceblue;
+}
+header h2{color: aliceblue;}
+header figure 
+{
+    float: none;
+    width: 5%;
+    height: 5%;
+    padding: 0;
+    margin: 0;
+}
+header figure img
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+header .subheading 
+{
+    margin:0;
+    font-weight: normal;
+    font-size: 12px; 
+}
+
+/***************************************
+* Navigation bar
+***************************************/
+nav button
+{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+nav 
+{
+    background-color: blue;
+    width: 100%;
+	margin-bottom: 2%;
+}
+nav button {}
+nav ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+nav ul li a 
+{
+    display: block;
+    background-color: blue;
+    color: aliceblue;
+    
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid rgb(0,0,0,0.9);
+}
+nav ul:first-child a
+{
+    border-left: none;
+}
+nav ul li.active a 
+{
+    background-color: #00004d;
+}
+nav ul li a:hover 
+{
+    background-color: darkblue;
+}
+nav ul.hide{display: none;}
+main
+{
+    padding: 0 2%;
+    text-align: center;
+	width: 100%;
+
+}
+main h2 
+{
+    border-top-width: 50%;
+}
+main picture { margin: 0 0 .2rem 2%; width:96%; }
+main picture img { width: 100%; }
+
+span 
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section 
+{
+    width: 100%;
+    overflow: auto;
+	margin-top: 3%;
+}
+
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  margin-left: 2%;
+}
+article p
+{
+   overflow: auto;
+}
+
+
+
+table, th, td, thead 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table 
+{
+   margin-left:auto; 
+   margin-right:auto;
+   overflow: auto;
+}
+
+
+/*gallery*/
+.wrapper {
+  display: grid;
+}
+* {box-sizing: border-box;}
+
+.wrapper {
+	width: 100%;
+    grid-template-columns: 100%;
+	grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+.wrapper > picture {
+  border: 2px solid rgb(58, 80, 252);
+  border-radius: 5px;
+  padding: 0;
+  
+  
+}
+.wrapper > picture:hover
+{
+	box-shadow: 9px 9px 3px rgb(58, 80, 252);
+}
+
+.nested {
+  border: 2px solid #ffec99;
+  border-radius: 5px;
+  background-color: #fff9db;
+  padding: 1em;
+}
+
+/*home*/
+
+.wrapper {
+  display: grid;
+}
+* {box-sizing: border-box;
+min-height: auto;}
+
+.wrapper {
+	width: 100%;
+    grid-template-columns: 100%;
+	grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+.wrapper > picture {
+  border: 2px solid rgb(58, 80, 252);
+  border-radius: 5px;
+  padding: 0;
+  
+  
+}
+.wrapper > picture:hover
+{
+	box-shadow: 9px 9px 3px rgb(58, 80, 252);
+}
+
+.nested {
+  border: 2px solid #ffec99;
+  border-radius: 5px;
+  background-color: #fff9db;
+  padding: 1em;
+}
+footer 
+{
+    padding: .5rem 2%;
+    background-color: blue;
+    text-align: center;
+    width: 100%;
+    font-size: small;
+	overflow: auto;
+	margin-top: 2%; 
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+.current
+{
+    width: 20%;
+    margin: auto;
+}
+.current p
+{
+    float: left;
+}
+.current img
+{
+    width: 5rem;
+    height: 5rem;
+}
+/****************************************************
+*  Style for the Form
+****************************************************/
+form#stormCenter h1
+{
+	color: white;
+    text-shadow: -1.5px 0 blue, 0 1.5px blue, 1.5px 0 black, 0 -1px black;
+	text-align: left;
+	font-size: 2rem;
+	
+}
+form#stormCenter
+{
+	margin: 1em 3%;
+	text-align: left;
+}
+
+form#stormCenter legend
+{
+	color: white;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1px black;
+	font-size: 1.5em;
+}
+
+form#stormCenter span 
+{
+	display: block;	
+}
+
+fieldset
+{
+	background-color: #ddeaff;
+	border: #edf2f9;
+	}
+
+label
+{
+	display: block;
+	margin: 2%;
+}
+
+.submitButton
+{
+	margin-top: 2%;
+	background-color: blue;
+	border: none;
+	padding: 2% 2% 2% 2%;
+	font-size: 1.5rem;
+	width: 50%;
+}
+
+.submitButton:hover 
+{
+    background-color: darkblue;
+	box-shadow: 4px 4px 10px;
+	
+}
+
+#thanks
+{
+	margin-top: 2%;
+	background-color: blue;
+	border: none;
+	padding: 2% 2% 2% 2%;
+	font-size: 1.5rem;
+	width: 50%;
+	color: white;
+	
+}
+#thanks a
+{
+	text-decoration: none;
+	color: white;
+}
+#thanks:hover 
+{
+    background-color: darkblue;
+	box-shadow: 4px 4px 10px;
+	
+}
+
+#currentdate {font-weight: normal; font-size: small;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}

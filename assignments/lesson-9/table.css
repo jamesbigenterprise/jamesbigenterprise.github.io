@@ -1,0 +1,90 @@
+html {
+
+  font-family: 'ubuntu', sans-serif;
+
+}
+
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+table {
+
+  border-collapse: collapse;
+  border: 0.5px solid rgb(200,200,200);
+
+  letter-spacing: 1px;
+  font-family: 'ubuntu', sans-serif;
+  box-shadow: 8px 8px 8px #628ca6;
+
+}
+
+tr:nth-child(6) td:nth-child(3){
+	background-color: #628ca6;
+	color: white;
+}
+
+
+td, th {
+
+  border: .5px solid rgb(190,190,190);
+
+  padding: 10px 20px;
+
+}
+
+.tHeader{
+	background-color: #7fb9c2; 
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+
+th {
+
+  background-color: #628ca6;
+  color: white;
+  font-weight: bold;
+
+}
+
+td {
+
+  text-align: center;
+
+}
+
+
+tr:nth-child(even) td {
+
+  background-color:  #e7f0ed;
+
+}
+tr:nth-child(odd) td {
+
+  background-color: #e7ffed;
+}
+tr:nth-child(7) td:nth-child(1){
+	font-style: italic;
+}
+tr:last-of-type td:last-of-type{
+	background-color: #7fb9c2;
+}
+
+
+
+
+
+caption {
+
+  padding: 10px;
+
+}
+
+
+
+
+>>>>>>> 4c07b689299580754cb5fdd66725ef70fabf1266
