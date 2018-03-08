@@ -1,12 +1,22 @@
 
 
 
-
 var weatherObject = new XMLHttpRequest();
-
 weatherObject.open('GET', 'http://api.wunderground.com/api/9e1b0ca9eddf1934/conditions/q/TX/Austin.json', 'true');
-
 weatherObject.send();
+
+
+var weatherObject2 = new XMLHttpRequest();
+weatherObject2.open('GET', 'http://api.wunderground.com/api/9e1b0ca9eddf1934/conditions/q/TX/San_Antonio.json', 'true');
+weatherObject2.send();
+
+
+var Object3 = new XMLHttpRequest();
+Object3.open('GET', 'http://api.wunderground.com/api/9e1b0ca9eddf1934/conditions/q/TX/Dallas.json', 'true');
+Object3.send();
+
+
+
 
 weatherObject.onload = function()
 {
@@ -21,11 +31,7 @@ weatherObject.onload = function()
 	document.getElementById('1img').src = weatherInfo.current_observation.icon_url;
 } // end of onload
 
-var weatherObject2 = new XMLHttpRequest();
 
-weatherObject2.open('GET', 'http://api.wunderground.com/api/9e1b0ca9eddf1934/conditions/q/TX/San_Antonio.json', 'true');
-
-weatherObject2.send();
 
 weatherObject2.onload = function()
 {
@@ -40,11 +46,7 @@ weatherObject2.onload = function()
 	document.getElementById('2img').src = weatherInfo2.current_observation.icon_url;
 } // end of onload
 
-var Object3 = new XMLHttpRequest();
 
-Object3.open('GET', 'http://api.wunderground.com/api/9e1b0ca9eddf1934/conditions/q/TX/Dallas.json', 'true');
-
-Object3.send();
 
 Object3.onload = function()
 {
@@ -58,5 +60,11 @@ Object3.onload = function()
 	document.getElementById('3temp').innerHTML = Info3.current_observation.temperature_string;
 	
 } // end of onload
+
+
+
+
+
+
 
 
