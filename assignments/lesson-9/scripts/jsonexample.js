@@ -60,6 +60,19 @@ byuiinfo.onload = function()
 	document.getElementById('1pop').innerHTML = weatherInfo4.towns["0"].currentPopulation;
 	document.getElementById('1rFall').innerHTML = weatherInfo4.towns["0"].averageRainfall;
 	
+	var weatherInfo4 = JSON.parse(byuiinfo.responseText);
+	console.log(weatherInfo4);
+	document.getElementById('moto2').innerHTML = weatherInfo4.towns["1"].motto;
+	document.getElementById('2founded').innerHTML = weatherInfo4.towns[1].yearFounded;
+	document.getElementById('2pop').innerHTML = weatherInfo4.towns["1"].currentPopulation;
+	document.getElementById('2rFall').innerHTML = weatherInfo4.towns["1"].averageRainfall;
 	
+	var weatherInfo4 = JSON.parse(byuiinfo.responseText);
+	console.log(weatherInfo4);
+	document.getElementById('moto3').innerHTML = weatherInfo4.towns["2"].motto;
+	document.getElementById('3founded').innerHTML = weatherInfo4.towns[2].yearFounded;
+	document.getElementById('3pop').innerHTML = weatherInfo4.towns[2].currentPopulation;
+	document.getElementById('3rFall').innerHTML = weatherInfo4.towns["2"].averageRainfall;
 	
+
 } // end of onload
