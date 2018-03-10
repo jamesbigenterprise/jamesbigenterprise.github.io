@@ -40,7 +40,7 @@ Object3.onload = function()
 	var Info3 = JSON.parse(Object3.responseText);
 	console.log(Info3);
 	
-	document.getElementById('3city').innerHTML = Info3.current_observation.display_location.city;
+	document.getElementById('3city').innerHTML = Info3.current_observation.display_location.city; 
 	document.getElementById('3cond').innerHTML = Info3.current_observation.weather;
     document.getElementById('3wind').innerHTML = Info3.current_observation.wind_string;
 	document.getElementById('3img').src = Info3.current_observation.icon_url;
