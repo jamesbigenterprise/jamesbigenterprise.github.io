@@ -1,7 +1,7 @@
 
 
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', 'https://api.wunderground.com/api/9e1b0ca9eddf1934/conditions/q/TX/Austin.json', 'true');
+weatherObject.open('GET', 'https://api.wunderground.cum/api/9e1b0ca9eddf1934/conditions/q/TX/Austin.json', 'true');
 weatherObject.send();
 weatherObject.onload = function()
 {
