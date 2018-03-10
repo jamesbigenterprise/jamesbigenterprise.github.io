@@ -47,3 +47,19 @@ Object3.onload = function()
 	document.getElementById('3temp').innerHTML = Info3.current_observation.temperature_string;
 	
 } // end of onload
+
+var byuiinfo = new XMLHttpRequest();
+byuiinfo.open('GET', 'https://byui-cit230.github.io/weather/data/towndata.json', 'true');
+byuiinfo.send();
+byuiinfo.onload = function()
+{
+	var weatherInfo4 = JSON.parse(byuiinfo.responseText);
+	console.log(weatherInfo4);
+	document.getElementById('moto1').innerHTML = weatherInfo4.towns["0"].motto;
+	document.getElementById('1founded').innerHTML = weatherInfo4.towns[1].yearFounded;
+	document.getElementById('1pop').innerHTML = weatherInfo4.towns["0"].currentPopulation;
+	document.getElementById('1rFall').innerHTML = weatherInfo4.towns["0"].averageRainfall;
+	
+	
+	
+} // end of onload
