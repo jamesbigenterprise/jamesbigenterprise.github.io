@@ -101,6 +101,7 @@ nav ul li a:hover
     background-color: darkblue;
 }
 nav ul.hide{display: none;}
+nav ul.show{display: block;}
 main
 {
     padding: 0 2%;
