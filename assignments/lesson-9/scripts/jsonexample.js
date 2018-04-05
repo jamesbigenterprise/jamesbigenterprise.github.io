@@ -6,7 +6,7 @@ weatherObject.onload = function()
 	var weatherInfo = JSON.parse(weatherObject.responseText);
 	console.log(weatherInfo);
 	
-	document.getElementById('firstcity').innerHTML = weatherInfo.current_observation.display_location.city;
+
 	document.getElementById('1cond').innerHTML = weatherInfo.current_observation.weather;
 	
 	document.getElementById('1temp').innerHTML = weatherInfo.current_observation.temperature_string;
@@ -23,7 +23,7 @@ weatherObject2.onload = function()
 	var weatherInfo2 = JSON.parse(weatherObject2.responseText);
 	console.log(weatherInfo2);
 	
-	document.getElementById('2city').innerHTML = weatherInfo2.current_observation.display_location.city;
+
 	document.getElementById('2cond').innerHTML = weatherInfo2.current_observation.weather;
 	
 	document.getElementById('2temp').innerHTML = weatherInfo2.current_observation.temperature_string;
@@ -40,7 +40,6 @@ Object3.onload = function()
 	var Info3 = JSON.parse(Object3.responseText);
 	console.log(Info3);
 	
-	document.getElementById('3city').innerHTML = Info3.current_observation.display_location.city; 
 	document.getElementById('3cond').innerHTML = Info3.current_observation.weather;
     document.getElementById('3wind').innerHTML = Info3.current_observation.wind_string;
 	document.getElementById('3img').src = Info3.current_observation.icon_url;
@@ -55,6 +54,7 @@ byuiinfo.onload = function()
 {
 	var weatherInfo4 = JSON.parse(byuiinfo.responseText);
 	console.log(weatherInfo4);
+	document.getElementById('firstcity').innerHTML = weatherInfo4.towns["0"].name;
 	document.getElementById('moto1').innerHTML = weatherInfo4.towns["0"].motto;
 	document.getElementById('1founded').innerHTML = weatherInfo4.towns[1].yearFounded;
 	document.getElementById('1pop').innerHTML = weatherInfo4.towns["0"].currentPopulation;
@@ -62,6 +62,7 @@ byuiinfo.onload = function()
 	
 	var weatherInfo4 = JSON.parse(byuiinfo.responseText);
 	console.log(weatherInfo4);
+	document.getElementById('2city').innerHTML = weatherInfo4.towns["1"].name;
 	document.getElementById('moto2').innerHTML = weatherInfo4.towns["1"].motto;
 	document.getElementById('2founded').innerHTML = weatherInfo4.towns[1].yearFounded;
 	document.getElementById('2pop').innerHTML = weatherInfo4.towns["1"].currentPopulation;
@@ -69,6 +70,7 @@ byuiinfo.onload = function()
 	
 	var weatherInfo4 = JSON.parse(byuiinfo.responseText);
 	console.log(weatherInfo4);
+	document.getElementById('3city').innerHTML = weatherInfo4.towns["3"].name;
 	document.getElementById('moto3').innerHTML = weatherInfo4.towns["2"].motto;
 	document.getElementById('3founded').innerHTML = weatherInfo4.towns[2].yearFounded;
 	document.getElementById('3pop').innerHTML = weatherInfo4.towns[2].currentPopulation;

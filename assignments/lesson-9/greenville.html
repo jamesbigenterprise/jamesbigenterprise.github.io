@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Franklin Weather Forecast</title>
+  <title>Greenville Weather Forecast</title>
   <meta name="author" content="Thiago Alves da Silva">
   <meta name="description" content="wheather forecast for the Franklin city">
   
@@ -28,8 +28,8 @@
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
     	<li><a href="index.html">Home</a></li>
-    	<li class="active"><a href="#">Franklin</a></li>
-    	<li><a href="greenville.html">Greenville</a></li>
+    	<li ><a href="franklin-7.html">Franklin</a></li>
+    	<li class="active"><a href="greenville.html">Greenville</a></li>
     	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery-7.html">Gallery</a></li>
@@ -37,27 +37,26 @@
   </nav>
     
   <main>
-    <h2><span id="firstcitytitle">First City</span></h2>
+    <h2><span id="secondcitytitle">Second City</span></h2>
     <picture>
-		<source media="(min-width: 650px)" srcset="images/responsivedesign/franklin3.jpg">
-		<source media="(min-width: 465px)" srcset="images/responsivedesign/franklin2.jpg">
-		<source media="(min-width: 360px)" srcset="images/responsivedesign/franklin1.jpg">
+		<source media="(min-width: 650px)" srcset="images/responsivedesign2/W2large.jpg">
+		<source media="(min-width: 465px)" srcset="images/responsivedesign2/W2medium.jpg">
+		<source media="(min-width: 360px)" srcset="images/responsivedesign2/W2small">
 		
-      <img src="images/responsivedesign/franklin1.jpg" alt="weathersample">
+      <img src="images/responsivedesign2/W2small.jpg" alt="weathersample">
 	  </picture>
     <section>
-     <div class="top1">
-			  <h2><span id="firstcity">First City</span></h2>
-			 <p><span id='moto1'></span></p>
-			 <p>Founnded in: <span id="1founded"></span>
-			  Population: <span id="1pop"></span></p>
-				   <p>Annual Rainfall: <span id="1rFall"></span></p>
-			  <p>Current conditions: <span id="1cond">conditions placeholder</span><br>Temperature: <span id='1temp'></span>
-			  <br>Wind Speed: <span id='1wind'></span>
+     <div class="top2">
+			  <h2><span id="2city">2 City</span></h2>
+			   <p><span id='moto2'></span></p>
+			   <p>Founnded in: <span id="2founded"></span>
+			  Population: <span id="2pop"></span></p>
+				   <p>Annual Rainfall: <span id="2rFall"></span></p>
+			  <p>Current conditions: <span id="2cond">conditions placeholder</span><br>Temperature: <span id='2temp'></span>
+			  <br>Wind Speed: <span id='2wind'></span>
 				  <br>
-				  <img id='1img' src="#" alt="CurrentWeather">
-			 </p>
-		  </div> 
+				  <img id='2img' src="#" alt="CurrentWeather">
+		  </div>
     </section>
        
     <section class="forecast">
@@ -98,10 +97,10 @@
       </section>
       
     <article>
-      <h2>Franklin Breaks Record</h2>	
+      <h2>Green Trees and Clean Air</h2>	
       <p class="town-article">
-        <img src="images/IMG-20180212-WA0001.jpg" alt="weather improvement illustration" >
-        Ut nisi lacus, porttitor a tellus sit amet, rutrum blandit enim. Maecenas eu felis tempor, aliquet neque nec, scelerisque est. Nunc in nulla ornare dui scelerisque mollis nec id purus. Vestibulum vel ligula volutpat, laoreet massa interdum, elementum nulla. Nunc dignissim, augue vel gravida ultrices, lectus tortor malesuada tellus, quis vestibulum mi enim a lorem. Aenean felis neque, auctor eu pretium non, rhoncus quis tellus. Curabitur varius ex ut elit tincidunt, a placerat neque cursus. Pellentesque interdum blandit consectetur. Mauris in ipsum metus. Ut feugiat, lacus ut venenatis mattis, lorem lorem venenatis massa, quis porttitor neque nulla id elit. Nulla varius aliquam ipsum, nec malesuada risus placerat eget. Integer non aliquet mauris.
+        <img src="images/responsivedesign2/greenery-1565936_640%20(1).jpg" alt="weather improvement illustration" >
+        A parent class represents a higher level of abstraction than the child because the child is a more specific version of the parent.  When there are several levels of inheritance, the number of levels of abstraction can become quite complex.  One design consideration when working with object relationships is to try to make the levels of abstraction consistent and meaningful.  Possibly the best example of this is the major taxonomic levels of living things such as plants and animals.  This taxonomy, called the Linnaean taxonomic system (from Carolus Linnaeus 1707-1778 who described it in 1735), consists of seven major divisions: {Kingdom, Phylum, Class, Order, Family, Genus, Species}. There are two aspects of this taxonomy: hierarchy and rank.  Hierarchy is preserved because the lower you go in the taxonomy the more similar the organism.  Members of a Species, for example, are guaranteed to be more similar than members of a Genus.  The second, rank, relates to the layers of abstraction.  The level of specificity for definition of a Species is consistent across the taxonomy. In other words, the requirements for creating a new Species is the same across all Genera of the taxonomy. Consider the levels of abstraction in our GUI example. If done correctly, each level should mean something. Changes made to the hierarchy contrary to the layers of abstraction are likely to compromise any benefit of the abstraction in the first place.
       </p>
 		</article>		  
   
@@ -116,7 +115,7 @@
 	<script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
 	<script src="scripts/windchill.js"></script>
-	<script src="scripts/franklinjson.js"></script>
+	<script src="scripts/greenvillejanson.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>

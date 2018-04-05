@@ -22,11 +22,8 @@
 <body onload="currentdate()" >
 
   <header class="clearfix">
-    <figure class="logo">
     <img src="images/lighthouse-1992778_1280.png" alt="The site logo" >
-    </figure>
-    <h1>The Weather sentinel</h1>
-    <h2 class="subheading">Whatching your way</h2>
+
   </header>
 
   <!-- site navigation use placeholder references -->
@@ -35,8 +32,8 @@
     <ul id="primaryNav" class="hide">
     	<li><a href="index.html">Home</a></li>
     	<li><a href="franklin-7.html">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
     	<li class="active"><a href="#">Storm Center</a></li>
     	<li><a href="gallery-7.html">Gallery</a></li>
     </ul>		
@@ -48,18 +45,18 @@
 		  <h1>Report a Weather Event</h1>
 	    <fieldset>
 			<legend><span>Your Info: </span></legend>
-		 <label><span>Full Name: </span><input name="fullname" type="text" placeholder="fullname" value="" pattern"[a-zA-Z] {5}" required></label>
+		 <label><span>Full Name: </span><input name="fullname" type="text" placeholder="fullname" value="" pattern="[a-zA-Z] {5}" required></label>
 		  
 		  <label><span>Email: </span><input name="email" type="email"  value="" placeholder="example@mail.com"></label>
 		  
 			<label><span>Phone: </span><input name="phone" type="tel"  value="" placeholder="9991234567" pattern="[0-9]{10,20}" required></label>
 		  
-		  <label><span>ZIP: </span><input name="zipCode" type="num"  value="" placeholder="72020" pattern="[0-9]{5,10}" required></label>
+		  <label><span>ZIP: </span><input name="zipCode" type="number"  value=""  required></label>
 		  </fieldset>
 		  
 		  <fieldset>
 			  <legend><span>Storm Details: </span></legend>
-		  <label><span>Storm Date: </span><input name="stormDate" type="date"  value="" placeholder="04/01/2018" pattern="[0-9/]{10}" ></label>
+		  <label><span>Storm Date: </span><input name="stormDate" type="date"  value="" ></label>
 			
 		  <label><span>Storm Type: </span><input list="stormType" name="stormType" type="text" > <datalist id="stormType">
 			  <option value="Flash Flood">
@@ -84,11 +81,10 @@
 			  </select>
 		  </label>
 		  
-		  <label>
-			  <span>User in Danger Level </span>
-			  <label><input type="radio" name="inDanger" value="true">True</label>
-			  <label><input type="radio" name="inDanger" value="false">False</label>
-		  </label>
+			  <span class="f">User in Danger Level </span>
+			  <input class="f" type="radio" name="inDanger" value="true">True
+			  <input type="radio" name="inDanger" value="false">False
+		  
 		  
 		  <label>
 		  <span>Comments:</span>

@@ -8,10 +8,7 @@
   <meta name="description" content="wheather forecast for the Franklin city">
   
   <!-- external style references in the proper cascading order -->    
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-	<script src="scripts/windchill.js"></script>
-	<script src="scripts/jsonexample.js"></script>
+    
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
@@ -22,28 +19,24 @@
 <body onload="currentdate()" >
 
   <header class="clearfix">
-    <figure class="logo">
     <img src="images/lighthouse-1992778_1280.png" alt="The site logo" >
-    </figure>
-    <h1>The Weather sentinel</h1>
-    <h2 class="subheading">Whatching your way</h2>
-  </header>
 
+  </header>
   <!-- site navigation use placeholder references -->
   <nav>
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
     	<li class="active"><a href="index.html">Home</a></li>
     	<li><a href="franklin-7.html">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li ><a href="gallery-7.html">Gallery</a></li>
     </ul>		
   </nav>
     
   <main>
-	  <article class="wrapperHome">
+	  <div class="wrapperHome">
 		  <article class="topleft">
 			 <h2>Weather story</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel fringilla elit. Proin pharetra velit fermentum, congue turpis eget, pellentesque turpis. Vivamus non tristique erat. Quisque malesuada commodo nisi sit amet blandit. Donec efficitur sed turpis ac tempus. Praesent gravida volutpat orci, bibendum vulputate leo fermentum nec. Aliquam placerat diam non mi convallis, ut scelerisque sem condimentum. </p>
@@ -66,7 +59,7 @@
 			  <p>Current conditions: <span id="1cond">conditions placeholder</span><br>Temperature: <span id='1temp'></span>
 			  <br>Wind Speed: <span id='1wind'></span>
 				  <br>
-				  <img id='1img' src="" alt="CurrentWeather">
+				  <img id='1img' src="#" alt="CurrentWeather">
 			 </p>
 		  </article>  
 		<picture class="bottom1">
@@ -86,7 +79,7 @@
 			  <p>Current conditions: <span id="2cond">conditions placeholder</span><br>Temperature: <span id='2temp'></span>
 			  <br>Wind Speed: <span id='2wind'></span>
 				  <br>
-				  <img id='2img' src="" alt="CurrentWeather">
+				  <img id='2img' src="#" alt="CurrentWeather">
 		  </article>
 		  
 		<picture class="bottom2">
@@ -106,7 +99,7 @@
 			  <p>Current conditions: <span id="3cond">conditions placeholder</span><br>Temperature: <span id='3temp'></span>
 			  <br>Wind Speed: <span id='3wind'></span>
 				  <br>
-				  <img id='3img' src="" alt="CurrentWeather">
+				  <img id='3img' src="#" alt="CurrentWeather">
 		  </article>
 		<picture>
 		<source media="(min-width: 650px)" srcset="images/gallery/W5large.jpeg">
@@ -116,7 +109,7 @@
       <img src="images/gallery/W5small.jpeg" alt="weathersample">
 
 		</picture>
-	  </article>
+	  </div>
 	</main>
     
   <footer>
@@ -128,5 +121,9 @@
 <script>
     					var header = document.querySelector('article.top1');
      			  </script>
+	<script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+	<script src="scripts/windchill.js"></script>
+	<script src="scripts/jsonexample.js"></script>
 </body>
 </html>
