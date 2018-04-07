@@ -139,7 +139,7 @@ table
    overflow: auto;
 }
 
-
+section.forecast { display: none; }
 footer 
 {
     padding: .5rem 2%;
