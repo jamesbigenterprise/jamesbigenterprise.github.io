@@ -27,7 +27,7 @@ section
 
 }
 
-/**grid-row-start / grid-column-start / grid-row-end / grid-column-end.**/	
+/*grid-row-start / grid-column-start / grid-row-end / grid-column-end.*/	
 .topleft { grid-area: 1 / 1 / 1 / 1;}
 .topright{ grid-area: 1 / 2 / 1 / 4;}
 .top1    { grid-area: 2 / 1 / 2 / 1;}
@@ -37,6 +37,4 @@ section
 .bottom2 { grid-area: 3 / 2 / 3 / 2;}
 .bottom3 { grid-area: 3 / 3 / 3 / 3;}
 	
-	
-}
 	
