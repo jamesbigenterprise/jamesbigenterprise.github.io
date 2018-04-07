@@ -42,15 +42,13 @@
     
   <main>
     <h2>The City of Franklin</h2>
-    <figure>
-      <img src="images/responsivedesign/franklin1.jpg" alt="weathersample"
-	   	   scrset="images/responsivedesign/franklin1.jpg 320w,
-		           images/responsivedesign/franklin2.jpg 480w,
-		           images/responsivedesign/franklin3.jpg 1080w">
-	   	sizes="(max-width: 320px) 280px,
-                       (max-width: 480px) 440px,
-                        800px">
-	  </figure>
+ <picture>
+		<source media="(min-width: 650px)" srcset="images/responsivedesign/franklin3.jpg">
+		<source media="(min-width: 465px)" srcset="images/responsivedesign/franklin2.jpg">
+		<source media="(min-width: 360px)" srcset="images/responsivedesign/franklin1.jpg">
+		
+      <img src="images/responsivedesign/franklin1.jpg" alt="weathersample">
+	  </picture>
     <section>
       <h3>Weather Summary</h3>    
       <div class="highlow">
