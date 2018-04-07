@@ -139,7 +139,7 @@ table
 }
 
 
-/gallery/
+/*gallery/
 .wrapper {
   display: grid;
 }
@@ -174,7 +174,7 @@ figure p
 {
 	margin: 0;
 }
-/home/
+/*home/
 
 .wrapper {
   display: grid;
@@ -324,7 +324,7 @@ label
 
 #currentdate {font-weight: normal; font-size: small;}
 
-/----- Clearfix: Force an Element not to collapse -----/
+/*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after{
   content: "";
   display: table;
