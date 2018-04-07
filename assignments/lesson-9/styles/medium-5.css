@@ -29,7 +29,7 @@
 .wrapperHome {
  display: grid;
 }
-/**grid-row-start / grid-column-start / grid-row-end / grid-column-end.**/	
+/*grid-row-start / grid-column-start / grid-row-end / grid-column-end.*/	
 .topleft { grid-area: 1 / 1 /1;}
 .topright{ grid-area: 1 / 2 /1;}
 .top1    { grid-area: 2 ;}
@@ -40,7 +40,7 @@
 .bottom3 { grid-area: 4 ;}
 
     
-/*----- Clearfix: Force an Element not to collapse -----*/
+/----- Clearfix: Force an Element not to collapse -----/
 .clearfix:after{
   content: "";
   display: table;
