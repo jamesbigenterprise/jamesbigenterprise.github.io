@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services - The Mountain Spoke</title>
+  <meta name="author" content="Thiago Alves da Silva">
+  <meta name="description" content="repair srvices for The Mountain Spoke">
+  
+  <!-- external style references in the proper cascading order -->    
+    
+  
+    
+</head>
+<body onload="currentdate()" >
+
+  <header class="clearfix">
+    <div><img src="images/Capture.PNG" ></div>
+
+
+  </header>
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li ><a href="index.html">Home</a></li>
+    	<li><a href="adventure.html">Adventure</a></li>
+    	<li><a href="event.html">Event</a></li>
+    	<li ><a href="shop.html">Shop</a></li>
+    	<li class="active"><a href="services.html">Services</a></li>
+    	<li ><a href="contact.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="container">
+
+
+		  <div id= "demo" class="index">
+				  <img src="images/responsivebikes/home2medium.jpg">
+				</div>
+		  <article class="index">bike info</article>
+		  <article class="index">
+			  <button class="submitButton"> Join US</button>
+			  <a href="json/prices.json">click</a>
+	      </article>
+		  <article class="index">contact</article>
+	 
+	</main>
+    
+  <footer>
+    <aside>
+      3950 Valley Commons Drive Bozeman, MT contact@mountainspoke.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate" >Current Date Placeholder</span></p>
+  </footer>
+<script>
+    					var header = document.querySelector('article.top1');
+     			  </script>
+	<script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+	<script src="scripts/windchill.js"></script>
+	<script src="scripts/prices.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</body>
+</html>

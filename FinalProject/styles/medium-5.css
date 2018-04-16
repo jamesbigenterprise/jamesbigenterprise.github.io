@@ -1,0 +1,39 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+ 
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+    
+   nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul.hide {display:block}
+    nav ul li a
+    {
+        padding: .5rem 1rem;
+        border: none;
+    }
+    nav ul li 
+{
+    float: left;
+    width: 15%;
+}
+
+.container
+{
+	grid-template-columns: 50% 50%;
+}
+
+
+    
+/----- Clearfix: Force an Element not to collapse -----/
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}

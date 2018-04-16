@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure - The Mountain Spoke</title>
+  <meta name="author" content="Thiago Alves da Silva">
+  <meta name="description" content="description of the adventures offered by The Mountain Spoke">
+  
+  <!-- external style references in the proper cascading order -->    
+    
+  
+    
+</head>
+<body onload="currentdate()" >
+
+  <header class="clearfix">
+    <div><img src="images/Capture.PNG" ></div>
+
+
+  </header>
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+     <ul id="primaryNav" class="hide">
+    	<li ><a href="index.html">Home</a></li>
+    	<li class="active"><a href="adventure.html">Adventure</a></li>
+    	<li ><a href="event.html">Event</a></li>
+    	<li ><a href="shop.html">Shop</a></li>
+    	<li ><a href="services.html">Services</a></li>
+    	<li ><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    
+  <main class="container">
+
+
+		<picture class="index">
+			<source media="(min-width: 650px)" srcset="images/responsivebikes/adventureLarge.jpg">
+			<source media="(min-width: 465px)" srcset="images/responsivebikes/adventureMedium.jpg">
+			<source media="(min-width: 360px)" srcset="images/responsivebikes/adventureSmall.jpg">
+
+		  <img src="images/responsivebikes/adventureSmall.jpg" alt="weathersample">
+		</picture>
+	  
+		  <article class="index textContainer">
+			  <h1>The Resistance Tour</h1>
+              <p>Ride for 6m for three different grounds, rock, earth and sand.</p>
+			<span>Length: 6 M</span><br>
+			<span>Skill Level: Beginner</span><br>
+			<span>Coast:  $15</span><br>
+
+	      </article>
+		<picture class="index">
+			<source media="(min-width: 650px)" srcset="images/responsivebikes/adventure2Large.jpg">
+			<source media="(min-width: 465px)" srcset="images/responsivebikes/adventure2Medium.jpg">
+			<source media="(min-width: 360px)" srcset="images/responsivebikes/adventure2Small.jpg">
+
+		  <img src="images/responsivebikes/adventure2Small.jpg" alt="weathersample">
+		</picture>
+	  
+		  <article class="index textContainer">
+			  <h1>The Jumping Tour</h1>
+              <p>Go through a trail filled with bumps to jump along the way.</p>
+			<span>Length: 3 M</span><br>
+			<span>Skill Level: Expert</span><br>
+			<span>Coast:  $20</span><br>
+
+	      </article>
+	 
+	</main>
+  <footer>
+    <aside>
+      3950 Valley Commons Drive Bozeman, MT contact@mountainspoke.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate" >Current Date Placeholder</span></p>
+  </footer>
+<script>
+    					var header = document.querySelector('article.top1');
+     			  </script>
+	<script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+	<script src="scripts/windchill.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</body>
+</html>

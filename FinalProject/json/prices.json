@@ -1,0 +1,30 @@
+{
+  "services" : [
+  {
+    "name": "Tune Up",
+    "price": "$40.00",
+  },
+  {
+    "name": "Brake or Gear Adjust",
+    "price": "$7.00",
+  },
+
+  {
+    "name": "Wheel Build",
+	"price": "$30.00"
+  },
+
+  {
+    "name": "Tube Install",
+	"price": "$8.00"
+  },
+  {
+	"name": "Tube Install", 
+	"price": "$5.00"
+  },
+  {
+	"name": "Fork Service", 
+	"price": "$39.00"
+  }
+ ]
+}

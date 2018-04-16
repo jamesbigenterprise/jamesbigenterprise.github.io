@@ -8,29 +8,22 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
+
+
 
 
 
 header 
 {
     background-color: rgb(65, 113, 244);
-    width: 100%;
-	height: 10%;
-	align-content: center;
+	display: grid;
+	grid-template-columns: auto;
+	
+	
+	
 }
 
-header img
-{
-    width:  100%;
-    height: 30%;
-	margin: 0; 
-  	padding: 0;
-	
-	
-}
+header img {width: 10%; margin-left: auto; margin-right: auto;}
 
 
 /*************
@@ -91,122 +84,19 @@ nav ul li a:hover
 }
 nav ul.hide{display: none;}
 nav ul.show{display: block;}
-main
-{
-    padding: 0 2%;
-    text-align: center;
-	width: 100%;
 
-}
 
-main picture { margin: 0 0 .2rem 2%; width:96%; }
-main picture img { width: 100%; }
 
 span 
 {
     font-weight: bold;
     font-size: 1.2em;
 }
-section 
-{
-    width: 100%;
-    overflow: auto;
-	margin-top: 3%;
-}
+
+main picture
+{overflow: hidden;}
 
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 100%; /* fill the page in the small/phone view */
-  margin-left: 2%;
-}
-article p
-{
-   overflow: auto;
-}
-
-
-
-table, th, td, thead 
-{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-table 
-{
-   margin-left:auto; 
-   margin-right:auto;
-   overflow: auto;
-}
-
-
-/*gallery*/
-.wrapper {
-  display: grid;
-}
-* {box-sizing: border-box;}
-
-.wrapper {
-	width: 100%;
-    grid-template-columns: 100%;
-	grid-column-gap: 10px;
-    grid-row-gap: 1em;
-}
-
-.wrapper > figure {
-  border: 2px solid rgb(58, 80, 252);
-  border-radius: 5px;
-  padding: 0;
-  
-  
-}
-.wrapper > figure:hover
-{
-	box-shadow: 9px 9px 3px rgb(58, 80, 252);
-}
-
-.nested {
-  border: 2px solid #ffec99;
-  border-radius: 5px;
-  background-color: #fff9db;
-  padding: 1em;
-}
-figure p 
-{
-	margin: 0;
-}
-/*home*/
-
-.wrapper {
-  display: grid;
-}
-* {box-sizing: border-box;
-min-height: auto;}
-
-.wrapper {
-	width: 100%;
-    grid-template-columns: 100%;
-	grid-column-gap: 10px;
-    grid-row-gap: 1em;
-}
-
-.wrapper > picture {
-  border: 2px solid rgb(58, 80, 252);
-  border-radius: 5px;
-  padding: 0;
-  
-  
-}
-.wrapper > picture:hover
-{
-	box-shadow: 9px 9px 3px rgb(58, 80, 252);
-}
-
-.nested {
-  border: 2px solid #ffec99;
-  border-radius: 5px;
-  background-color: #fff9db;
-  padding: 1em;
-}
 footer 
 {
     padding: .5rem 2%;
@@ -222,6 +112,47 @@ footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+.container
+{
+	display: grid;
+	grid-template-columns: 100%;
+	background-color: #2196F3;
+	padding: 10px;
+}
+.index
+{
+	background-color: rgba(255, 255,255, 0.8);
+	border: 1px solid;
+	text-align: center;
+}
+
+.textContainer
+{
+	display: grid;
+}
+
+	.container div img, .buy img {width: 100%;}
+
+.accordion div
+{
+	border: 1px solid;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.accordion h2
+{
+	border: 1px solid;
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #42f480;
+}
+
+.accordion a
+{
+	text-decoration: none;
+}
 .current
 {
     width: 20%;
@@ -282,7 +213,7 @@ label
 }
 
 
-.submitButton
+.submitButton, .buy button
 {
 	margin-top: 2%;
 	background-color: rgb(65, 113, 244);
@@ -292,7 +223,7 @@ label
 	width: 50%;
 }
 
-.submitButton:hover 
+.submitButton, .buy button:hover 
 {
     background-color: rgb(48, 100, 242);
 	box-shadow: 4px 4px 10px;
