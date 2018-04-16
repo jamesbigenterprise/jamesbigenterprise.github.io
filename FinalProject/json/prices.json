@@ -2,7 +2,7 @@
   "services" : [
   {
     "name": "Tune Up",
-    "price": "$40.00",
+    "price": "$40.00"
   },
   {
     "name": "Brake or Gear Adjust",
