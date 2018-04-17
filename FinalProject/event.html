@@ -15,7 +15,7 @@
 <body onload="currentdate()" >
 
   <header class="clearfix">
-    <div><img src="images/Capture.PNG" ></div>
+    <div><img src="images/Capture.PNG" alt="logo"></div>
 
 
   </header>
@@ -33,37 +33,58 @@
     </ul>		
   </nav>
     
-  <main class="container">
+  <main>
+	  	  <article class="index">
+	      <h1>Cycle the Continental Divide</h1>
+		  <p>An exciting event where you will be exposed to several modalities of mountain bike.</p>
+	  </article>
+<div class="container">
+
+		
+		 <article class="index textContainer">	  
+			<h1>The Route to Heaven</h1>
+			<span>Date: April 1, 2018</span>
+			<span>Route: Chestnut Mountain</span>
+		</article>
+	  
+		<article class="index textContainer">	  
+			<h1>The Cowboys on bikes</h1>
+			<span>Date: April 3, 2018</span>
+			<span>Route: Bohart Ranch</span>
+		</article>
+	  
+
+	  
+		<article class="index">
+			  <form action="thanksevent.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormCenter">
+				<h1>Event Registration</h1>
+				<fieldset>
+				 <label><span>Full Name: </span><input name="fullname" type="text" placeholder= "fullname" value="" title="Please enter your name" required></label>
+
+				  <label><span>Email: </span><input name="email" type="email"  value="" placeholder="example@mail.com"></label>
+
+					<label><span>Phone: </span><input name="phone" type="tel"  value="" placeholder="9991234567" pattern="[0-9]{10,20}" required></label>
+
+					<label><span>Birthday: </span><input name="birthday" type="date"  value="" ></label>
+
+				   <label><span>Home State/Country </span><input name="state/country" type="text" placeholder="state/country"  required></label>
 
 
-		  <div class="index">
-				  <img src="images/1920px-Norco_Range.jpg">
-				</div>
-		  <article class="index">bike info</article>
-		  <article class="index">
-			  <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormCenter">
-		  <h1>Event Registration</h1>
-	    <fieldset>
-		 <label><span>Full Name: </span><input name="fullname" type="text" placeholder="fullname" value="" pattern="[a-zA-Z] {5}" required></label>
-		  
-		  <label><span>Email: </span><input name="email" type="email"  value="" placeholder="example@mail.com"></label>
-		  
-			<label><span>Phone: </span><input name="phone" type="tel"  value="" placeholder="9991234567" pattern="[0-9]{10,20}" required></label>
-			
-			<label><span>Birthday: </span><input name="birthday" type="date"  value="" ></label>
-		  
-		   <label><span>Home State/Country </span><input name="state/country" type="text" placeholder="state/country" pattern="[a-zA-Z] {5}" required></label>
-			 
-		  
-		  <input type="submit" value="Submit" class="submitButton">
-		  
-		  <input name="redirect" type="hidden" value="thanks.html">
-	 
-				  </fieldset>
-	  </form>
+				  <input type="submit" value="Submit" class="submitButton">
+
+				  <input name="redirect" type="hidden" value="thanks.html">
+
+						  </fieldset>
+	              </form>
 	      </article>
-		  <article class="index">contact</article>
-	 
+		  <article class="index textContainer">
+		  <h2>The Mountain Spoke – Mountain Bike</h2>
+			<span>contact@mountainspoke.com</span>
+			<span>+1-202-555-0113</span>
+			<span>3950 Valley Commons Drive Bozeman, MT</span>
+			  
+	  </article>
+	 </div>
 	</main>
     
   <footer>
