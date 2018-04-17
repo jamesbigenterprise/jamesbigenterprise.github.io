@@ -33,7 +33,7 @@
 
 
     
-/----- Clearfix: Force an Element not to collapse -----/
+/*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after{
   content: "";
   display: table;
