@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style> /* Cherry Christenson's style with a snippet from Thiago's code. */
+            /*Thiago also worked to set up our group on Slack and GitHub*/
+	   body
+     {
+       /*Color and a thick border*/
+        border: 50px solid teal;
+        background-color: turquoise;
+        padding-top: 50px;
+        padding-right: 25px;
+        padding-bottom: 75px;
+        padding-left: 90px;
+      }
+      h1
+      {
+        /*Larger heading with sans-serif font*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        font-size: 300%;
+        /*Thiago's shadow effect:*/
+        text-shadow: 4px 4px 8px black;
+      }
+      h3
+      {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+      }
+      p
+      {
+        /*serif font for paragraphs*/
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+	</style>
+    <style> /* Naoya Yuda */
+	     body { 
+      font-size:16px;
+      background-color: #BBBBBB; 
+    }
+
+    h1{
+    background: #b0dcfa;
+    padding: 0.5em;
+    color: white;
+    border-radius: 0.5em;
+    }
+
+#title p, #text p, #sidebar p {
+
+padding: 0.5em;
+color: #494949;
+background: #fffaf4;
+border-left: solid 5px #ffaf58;
+
+}
+h3 {
+
+border-bottom: double 5px #FFC778;
+color: #80ffff
+
+
+}
+
+ul{
+  color: #668ad8;
+  border: double 5px #668ad8;
+  background: #f1f8ff; 
+  padding: 0.5em;
+
+}
+
+ul li {
+  line-height: 1.5;
+  padding: 0.5em;
+}
+a {
+   width: 100px;
+   line-height: 10px;
+   display: block;
+   text-align: left;
+   background: turquoise;
+   padding: 1em;
+}
+#bottom {
+color: #80ffff;
+border-bottom: dashed 3px #6594e0;
+font-weight: bold;
+
+}
+	</style>
+    <style> /* Michael Jury */
+	       body {
+       font-size:12pt;
+       background-color: black;
+     }
+     p {color:lime;
+       font-family: monospace;
+       text-align: center;
+     }
+     h1,h3{color:white;
+     font-family: monospace;
+     text-align: center;
+     }
+     li{color:lightgrey;
+     font-family: monospace;
+     }
+     a{color: red;
+       text-decoration: none;
+     }
+
+
+     #sidebar,#text,#title{
+       margin-left: auto;
+       margin-right: auto;
+       width: 500px;
+     }
+
+    #bottom{
+      font-family: monospace;
+      color:pink;
+      text-align: center;
+    }
+
+    #menuBarList{
+      text-align: center;
+    }
+
+    /************************************************************
+    *Thiago Alves
+    *Implementation of the glow, brinking and coding animations
+    ***********************************************************/
+	ul{
+	list-style:none;
+	color: black;
+	}
+	ul li:hover{
+	animation-name: glow;
+	animation: glow .5s ease-in-out infinite alternate;
+    }
+
+    ul li:nth-of-type(1){
+	font-size:3em;
+	font-family: impact;
+    }
+    ul li:nth-of-type(2){
+	font-size:2.3em;
+	font-family: Courier new;
+	font-weight: bold;
+    }
+    ul li:nth-of-type(3){
+	font-size:3.5em;
+	font-family: verdana;
+    }
+    ul li:nth-of-type(4){
+	font-size:1.7em;
+	font-family: helvetica;
+    }
+    ul li:nth-of-type(5){
+	font-size:2.5em;
+	font-family: Times Header;
+	 
+    }
+	a{
+    display:block;
+    font-size:3em;
+    width:40%;
+    text-decoration:none;
+    font-family:monospace;
+    letter-spacing: .15em;
+    color: green;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: coding 3s steps(10,end) infinite; 
+    }
+    a:after{
+    content:"";
+    display: block;
+    margin-left:90%;
+    width:100px;
+    border-bottom: .15em solid green;
+    animation: blinking .5s step-end infinite  ;
+    color:white; 
+    }
+	@keyframes coding { 
+    from {width: 0;}
+    to {width:100%;}
+    }
+   @keyframes blinking{
+   from, to {border-color: green}
+   50% {border-color: transparent}
+   }
+   @keyframes glow{
+     from {
+		text-shadow: 0 0 10px #05ff05, 0 0 20px #04d104, 0 0 30px #00af00, 0 0 40px #009100, 0 0 80px #008000;
+	 }
+	 to{
+		text-shadow: 0 0 5px #05ff05, 0 0 10px #04d104, 0 0 15px #00af00, 0 0 20px #009100, 0 0 40px #008000;
+	 }
+   }
+
+	</style>
+
+	</style>
+    <style> /* Cody Lillywhite */
+	   body
+     html { 
+            border-style: double;
+            border-width: 5px;
+        }
+        body {
+            font-size:16px; 
+           background-color:azure;
+        }
+        /*#title = Week 03... no stylesheet*/
+        #title h1 {
+           text-align: center;
+           background-color: coral;
+           padding: 2%;
+           font-family: 'Impact';
+           font-size: 25px;
+       }
+       #title p{font-weight:bold;}
+       #title p,#content{width: 100%;}
+       /*#text = stylesheet section/instructions*/
+       #text h1,#text p{
+           width:75%;
+           float: right;
+        }
+       #text h1,#sidebar h1 {font-size: 20px;}
+       /*#sidebar = grading*/
+       #sidebar {
+           position: absolute;
+           top:36%;
+           width: 20%;
+           padding: 0px 5px;
+           border-style: dotted;
+            border-width: 2px;
+       }
+       
+       /*links*/
+       p a {
+        padding: 0px 15px;
+        color: black;
+        background-color:cornflowerblue;
+        border-radius: 4px;
+        cursor: pointer;
+        font-style: oblique;
+        font-size: 18px;
+        display: block;
+        }
+        p a:hover {background-color:cyan;}
+        p a:active {background-color:darkblue;}
+        #bottom {
+          float:left;
+          width: 20%;
+        }
+	</style>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+   </head>
+   <body onload="disableStyles()">
+      <div class="document">
+        <div id="title">
+          <h1>Week 03 : CSS</h1>
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!--title -->
+        <div class="content">
+          <div id="menuBar">
+            <ul id="menuBarList">
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+            </ul>
+          </div> <!-- menuBar -->
+          <div id="text">
+            <h1>Select the Stylesheet</h1>
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+            		and even the layout of the page.You can change the layout of this page by selecting different 
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+            </p>
+             <h1>Instructions</h1>
+            <p>Please modify this page to include a description of each stylesheet, including anything clever that 
+            		you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+         </div> <!-- text -->
+         <div id="sidebar">
+           <h3>Grading</h3>
+            <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+            		and how you helped your classmates. This means your contribution needs to be briefly described 
+                    on the page.</p>
+          </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by </div>
+      </div> <!-- document -->
+      
+      <script>
+	    /* DISABLE STYLES: This function turns off the four stylesheets */
+	    function disableStyles() 
+		{
+		  document.styleSheets[0].disabled = true;
+		  document.styleSheets[1].disabled = true;
+		  document.styleSheets[2].disabled = true;
+		  document.styleSheets[3].disabled = true;
+		}
+		/* APPLY STYLES: This function turns off all four stylesheets, then turns one back on */
+		function applyStyle(i)
+		{
+			disableStyles();
+			document.styleSheets[i].disabled = false;
+		}
+	  </script>
+   </body>
+</html>
