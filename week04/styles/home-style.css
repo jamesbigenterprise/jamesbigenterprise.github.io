@@ -1,0 +1,28 @@
+#firstarticle{
+	background-image: url("../images/lose_fear.jpg");	
+}
+#secondarticle{
+	background-image: url("../images/help_laptop.png");	
+}
+.illustration{
+	min-height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+article{
+	background-color: inherit;
+	margin: 5% 0;
+}
+h1{
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	background-color:inherit;
+	border-top-style: solid;
+	border-width: .3em;
+	border-color:rgb(8,42,96);
+	font-size:4em;
+	color:rgb(4,30,71);
+	margin-top:-4%;
+}
