@@ -5,32 +5,22 @@
     <meta charset="utf-8">
 	<meta name="author" content="Thiago_Alves">
 	<meta name="description" content="2 Ajax demos">
+	<script type="text/javascript" src="scripts/ajax.js"></script>
     <title>Ajax Interaction</title>
-	<script>
-	<!--
-	function getCity()
-	{
-	   var xht = new XMLHttpRequest();
-	   xht.onreadystatechange = function(){
-	     if(this.readyState == 4 && this.status == 200)
-	     {
-	        document.getElementById("input").innerHTML = xht.responseText;
-	     }
-	   };
-	   xht.open("GET", "mexico.txt", true);
-	   xht.send();
-	}
-	-->
-	</script>
+	
   </head>
-  <body >
+  <body>
     <section>
 	  <h1>Pick a country</h1>
-	  <button onclick="getCity()">Do it</button>
+	  <button class="countries" id="US" onclick="getCities('us.txt')">US</button>
+	  <button class="countries" id="Mexico" onclick="getCities('mexico.txt')">Mexico</button>
+	  <button class="countries" id="Canada" onclick="getCities('canada.txt')">Canada</button>
+	  <button class="countries" id="Russia" onclick="getCities('russia.txt')">Russia</button>
 	  <p id="input">mexico</p>
 	</section>
 	<section>
 	  <h1>Type the file name</h1>
 	</section>
   </body>
+  
 </html>
