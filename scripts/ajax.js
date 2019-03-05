@@ -10,7 +10,6 @@ function getCities(country)
 			var cities = xht.responseText.split(" ");
 			console.log(cities[0]);
             var i;
-            var xmlDoc = xml.responseXML;
             var table ="<tr><th>City</th><th>Population</th></tr>";
             for (i = 0; i < cities.length; i++)
             {
