@@ -24,4 +24,4 @@ function getCities(country)
 	   xht.send();
 	   
 	   console.log(country);
-	}
+	} 
