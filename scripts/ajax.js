@@ -6,7 +6,9 @@ function getCities(country)
 	   xht.onreadystatechange = function(){
 	     if(this.readyState == 4 && this.status == 200)
 	     {
-	        document.getElementById("input").innerHTML = xht.responseText;
+	        //document.getElementById("input").innerHTML = xht.responseText;
+			var cities = xht.responseText.split(" ");
+			console.log(cities[0])
 	     }
 	   };
 	   xht.open("GET", country, true);
