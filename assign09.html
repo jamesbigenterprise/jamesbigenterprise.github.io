@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<meta name="author" content="Thiago_Alves">
+	<meta name="description" content="2 Ajax demos">
+    <title>Ajax Interaction</title>
+	<script>
+	<!--
+	function getCity()
+	{
+	   var xht = new XMLHttpRequest();
+	   xht.onreadystatechange = function(){
+	     if(this.readyState == 4 && this.status == 200)
+	     {
+	        document.getElementById("input").innerHTML = xht.responseText;
+	     }
+	   };
+	   xht.open("GET", "mexico.txt", true);
+	   xht.send();
+	}
+	-->
+	</script>
+  </head>
+  <body >
+    <section>
+	  <h1>Pick a country</h1>
+	  <button onclick="getCity()">Do it</button>
+	  <p id="input">mexico</p>
+	</section>
+	<section>
+	  <h1>Type the file name</h1>
+	</section>
+  </body>
+</html>
