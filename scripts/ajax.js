@@ -18,7 +18,7 @@ function getCities(country)
             }
 			document.getElementById("input").innerHTML = table;
           }
-	     }//;
+	     }
 	   xht.open("GET", country, true);
 	   xht.send();
 	   
