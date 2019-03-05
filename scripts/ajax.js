@@ -1,5 +1,3 @@
-
-
 function getCities(country)
 	{
 	   var xht = new XMLHttpRequest();
@@ -8,11 +6,19 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText.split(" ");
-			console.log(cities[0])
+			console.log(cities[0]);
+            var i;
+            var table ="<tr><th>City</th><th>Population</th></tr>";
+            for (i = 0; i < cities.length; i++)
+            {
+               table += "<tr><td>" +
+               cities[i] +	"</td><td>" + cities[i++] + "</td></tr>";		   
+            }
+			document.getElementById("input").innerHTML = table;
+          }
 	     }
-	   };
 	   xht.open("GET", country, true);
 	   xht.send();
 	   
 	   console.log(country);
-	}
+	} 
