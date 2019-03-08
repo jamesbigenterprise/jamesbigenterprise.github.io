@@ -1,11 +1,11 @@
-var usa = document.getElementById("US");
-var Mexico = document.getElementById("Mexico");
-var Canada = document.getElementById("Canada");
-var Russia = document.getElementById("Russia");
+var usa = document.getElementById("us");
+var mexico = document.getElementById("mexico");
+var canada = document.getElementById("canada");
+var russia = document.getElementById("russia");
 usa.addEventListener("click", getCities('usa.txt'));
-Mexico.addEventListener("click", getCities('mexico.txt'));
-Canada.addEventListener("click", getCities('canada.txt'));
-Russia.addEventListener("click", getCities('russia.txt'));
+mexico.addEventListener("click", getCities('mexico.txt'));
+canada.addEventListener("click", getCities('canada.txt'));
+russia.addEventListener("click", getCities('russia.txt'));
 
 function getCities(country)
 	{
