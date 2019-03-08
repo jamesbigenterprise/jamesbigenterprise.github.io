@@ -5,7 +5,7 @@ function getCities(country)
 	     if(this.readyState == 4 && this.status == 200)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
-			var cities = xht.responseText.split("/n");
+			var cities = xht.responseText.split("\n");
 			console.log(cities[0]);
             var i;
             var  table ="<tr><th>City</th><th>Population</th></tr>";
