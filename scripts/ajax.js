@@ -6,7 +6,11 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText.split("\n");
-			var data = cities.split(" ");
+			var data [];
+			for (ii = 0; i < cities.length; ii++)
+			{
+			   data[ii] += cities[ii].split(" ");
+			}
 			console.log(cities[0]);
             var  table ="<tr><th>City</th><th>Population</th></tr>";
             for (i = 0; i < data.length; i++)
