@@ -6,12 +6,13 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText.split("\n");
+			var data = cities.split(" ");
 			console.log(cities[0]);
             var  table ="<tr><th>City</th><th>Population</th></tr>";
-            for (i = 0; i < cities.length; i++)
+            for (i = 0; i < data.length; i++)
             {
                table += "<tr><td>" +
-               cities[i] +	"</td><td>" + cities[++i] + "</td></tr>";		   
+               data[i] +	"</td><td>" + data[++i] + "</td></tr>";		   
             }
 			document.getElementById("input").innerHTML = table;
           }
