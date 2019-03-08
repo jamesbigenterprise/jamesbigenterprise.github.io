@@ -1,3 +1,12 @@
+var usa = document.getElementById("US");
+var Mexico = document.getElementById("Mexico");
+var Canada = document.getElementById("Canada");
+var Russia = document.getElementById("Russia");
+usa.addEventListener("click", getCities('usa.txt'));
+Mexico.addEventListener("click", getCities('mexico.txt'));
+Canada.addEventListener("click", getCities('canada.txt'));
+Russia.addEventListener("click", getCities('russia.txt'));
+
 function getCities(country)
 	{
 	   var xht = new XMLHttpRequest();
