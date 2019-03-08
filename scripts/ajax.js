@@ -8,7 +8,7 @@ function getCities(country)
 			var cities = xht.responseText.split("/n");
 			console.log(cities[0]);
             var i;
-            var  ="<tr><th>City</th><th>Population</th></tr>";
+            var  table ="<tr><th>City</th><th>Population</th></tr>";
             for (i = 0; i < cities.length; i++)
             {
                table += "<tr><td>" +
