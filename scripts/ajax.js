@@ -36,7 +36,7 @@ function getStudents()
 function printJson(data)
 {
 	console.log(data);
-			console.log(data[0]);
+			console.log(data.first);
    var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
    var i;
    for (i=0; i < second.length; i++)
