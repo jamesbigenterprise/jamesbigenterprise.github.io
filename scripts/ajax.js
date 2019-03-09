@@ -6,8 +6,6 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText;
-		
-			console.log(cities[0]);
             var  table ="<pre>" + cities + "</pre>";
             
 			document.getElementById("input").innerHTML = table;
@@ -15,20 +13,17 @@ function getCities(country)
 	     }
 	   xht.open("GET", country, true);
 	   xht.send();
-	   
-	   console.log(country);
 	} 
 	
-function getStudents(file)
-	{
+function getStudents()
+{
+	var fileName = document.getElementById("file").value;
 	   var xht = new XMLHttpRequest();
 	   xht.onreadystatechange = function(){
 	     if(this.readyState == 4 && this.status == 200)
 	     {
-	        //document.getElementById("input").innerHTML = xht.responseText;
 			var students = JSON.parse(xht.responseText);
-		
-			console.log(students[0]);
+			console.log(fileName);
             var  outHtml ="<pre>" + cities + "</pre>";
             
 			document.getElementById("jsonout").innerHTML = outHtml;
@@ -37,5 +32,5 @@ function getStudents(file)
 	   xht.open("GET", file, true);
 	   xht.send();
 	   
-	   console.log(country);
+	   console.log(fileName);
 	} 
