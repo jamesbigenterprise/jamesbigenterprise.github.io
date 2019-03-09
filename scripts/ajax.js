@@ -25,7 +25,7 @@ function getStudents()
 			console.log(xht.responseText6);
 			var students = JSON.parse(xht.responseText);
 			console.log(fileName);
-            var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
+            /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             vay i;
 			for (i=0; i < students.lengh; i++)
 			{
@@ -34,7 +34,7 @@ function getStudents()
 			   students[i].address.zip + "</td><td>" + students[i].major + "</td><td>" + 
 			   students[i].gpa + "</td></tr>"
 			}
-			document.getElementById("jsonout").innerHTML = outHtml;
+			document.getElementById("jsonout").innerHTML = outHtml;*/
           }
 	     }
 	   xht.open("GET", fileName, true);
