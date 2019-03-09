@@ -9,7 +9,7 @@ function getCities(country)
 			var data = new Array();
 			for (ii = 0; ii < cities.length; ii++)
 			{
-			   data[ii] += cities[ii].split(" ");
+			   data[ii] += cities[ii].split("		    ");
 			}
 			console.log(cities[0]);
             var  table ="<tr><th>City</th><th>Population</th></tr>";
