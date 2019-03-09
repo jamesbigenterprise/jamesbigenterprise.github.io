@@ -23,8 +23,6 @@ function getStudents()
 	     if(this.readyState == 4 && this.status == 200)
 	     {
 			var json = xht.responseText;
-			var students = JSON.parse(json);
-			//console.log(json);
 			var second = JSON.parse(json);
 			console.log(second);
 
