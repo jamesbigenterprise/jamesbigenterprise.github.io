@@ -32,7 +32,7 @@ function getStudents()
 			   table += "<tr><td>" + students[i].first + " " + students[i].last + "</td><td>" + 
 			   students[i].address.city + "-" + students[i].address.state + " " + 
 			   students[i].address.zip + "</td><td>" + students[i].major + "</td><td>" + 
-			   students[i].gpa + "</td></tr>"
+			   students[i].gpa + "</td></tr>";
 			}
 			document.getElementById("jsonout").innerHTML = table;
           }
