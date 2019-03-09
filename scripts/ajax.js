@@ -22,9 +22,8 @@ function getStudents()
 	   xht.onreadystatechange = function(){
 	     if(this.readyState == 4 && this.status == 200)
 	     {
-			console.log(xht.responseText6);
 			var students = JSON.parse(xht.responseText);
-			console.log(fileName);
+			console.log(students[0].first);
             /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             vay i;
 			for (i=0; i < students.lengh; i++)
