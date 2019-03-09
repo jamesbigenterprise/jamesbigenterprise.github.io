@@ -6,17 +6,13 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText.split("\n");
-			var data = new Array();
-			for (ii = 0; ii < cities.length; ii++)
-			{
-			   data[ii] += cities[ii].split("		    ");
-			}
+		
 			console.log(cities[0]);
             var  table ="<tr><th>City</th><th>Population</th></tr>";
-            for (i = 0; i < data.length; i++)
+            for (i = 0; i < cities.length; i++)
             {
                table += "<tr><td>" +
-               data[i] +	"</td><td>" + data[++i] + "</td></tr>";		   
+               cities[i] +	"</td><td>" + cities[++i] + "</td></tr>";		   
             }
 			document.getElementById("input").innerHTML = table;
           }
