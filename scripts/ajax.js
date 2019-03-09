@@ -24,12 +24,13 @@ function getStudents()
 	     {
 			var json = xht.responseText;
 			var students = JSON.parse(json);
-			console.log(students.lengh);
+			//console.log(students.lengh);
 
             var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             var i;
 			for (i=0; i < students.lengh; i++)
 			{
+				console.log(i);
 			   table += "<tr><td>" + students[i].first + " " + students[i].last + "</td><td>" + students[i].address.city + "-" + students[i].address.state + " " + students[i].address.zip + "</td><td>" + students[i].major + "</td><td>" + students[i].gpa + "</td></tr>";
 			}
 			document.getElementById("jsonout").innerHTML = table;
