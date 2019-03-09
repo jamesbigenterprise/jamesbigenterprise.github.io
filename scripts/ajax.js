@@ -24,10 +24,9 @@ function getStudents()
 	     {
 			var json = xht.responseText;
 			var students = JSON.parse(json);
-			console.log(students);
 
-            /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
-            vay i;
+            var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
+            var i;
 			for (i=0; i < students.lengh; i++)
 			{
 			   table += "<tr><td>" + students[i].first + " " + students[i].last + "</td><td>" + 
