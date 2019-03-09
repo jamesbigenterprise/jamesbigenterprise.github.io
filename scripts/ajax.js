@@ -29,7 +29,7 @@ function getStudents()
 			document.getElementById("jsonout").innerHTML = outHtml;
           }
 	     }
-	   xht.open("GET", json.txt, true);
+	   xht.open("GET", "json.txt", true);
 	   xht.send();
 	   
 	   console.log(fileName);
