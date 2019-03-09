@@ -26,7 +26,7 @@ function getStudents()
 			var students = JSON.parse(json);
 			
 			var second = JSON.parse(json);
-			console.log(second.size() + " LENGTH");
+			console.log(second[0]);
 			
             var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             var i;
