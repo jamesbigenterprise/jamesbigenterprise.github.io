@@ -6,7 +6,7 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText.split("\n");
-			var data [];
+			var data = new Array();
 			for (ii = 0; i < cities.length; ii++)
 			{
 			   data[ii] += cities[ii].split(" ");
