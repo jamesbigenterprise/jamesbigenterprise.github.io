@@ -22,6 +22,7 @@ function getStudents()
 	   xht.onreadystatechange = function(){
 	     if(this.readyState == 4 && this.status == 200)
 	     {
+			console.log(xht.responseText);
 			var students = JSON.parse(xht.responseText);
 			console.log(fileName);
             var  outHtml ="<pre>" + students[0] + "</pre>";
