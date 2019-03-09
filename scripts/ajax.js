@@ -24,18 +24,20 @@ function getStudents()
 	     {
 			var json = xht.responseText;
 			var students = JSON.parse(json);
-			var students2 = JSON.parse(xht.responseText);
-			console.log(students2[0].first);
-			console.log(students2.length + "LENGTH");
+			console.log(json);
+			var second = JSON.parse(json);
 
-            var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
-            var i;
-			for (i = 0; i < students.length; i++)
+
+            /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
+            vay i;
+			for (i=0; i < students.lengh; i++)
 			{
-				console.log(i + "LOOPING");
-			   table += "<tr><td>" + students[i].first + " " + students[i].last + "</td><td>" + students[i].address.city + "-" + students[i].address.state + " " + students[i].address.zip + "</td><td>" + students[i].major + "</td><td>" + students[i].gpa + "</td></tr>";
+			   table += "<tr><td>" + students[i].first + " " + students[i].last + "</td><td>" + 
+			   students[i].address.city + "-" + students[i].address.state + " " + 
+			   students[i].address.zip + "</td><td>" + students[i].major + "</td><td>" + 
+			   students[i].gpa + "</td></tr>"
 			}
-			document.getElementById("jsonout").innerHTML = table;
+			document.getElementById("jsonout").innerHTML = outHtml;*/
           }
 	     }
 	   xht.open("GET", fileName, true);
