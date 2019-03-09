@@ -22,7 +22,8 @@ function getStudents()
 	   xht.onreadystatechange = function(){
 	     if(this.readyState == 4 && this.status == 200)
 	     {
-			var students = JSON.parse(xht.responseText);
+			var json = xht.responseText;
+			var students = JSON.parse(json);
 			console.log(students[0].first);
             /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             vay i;
@@ -38,7 +39,5 @@ function getStudents()
 	     }
 	   xht.open("GET", fileName, true);
 	   xht.send();
-	   
-	   console.log(fileName);
 	} 
 	
