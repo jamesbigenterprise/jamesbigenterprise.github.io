@@ -24,7 +24,7 @@ function getStudents()
 	     {
 			var students = JSON.parse(xht.responseText);
 			console.log(fileName);
-            var  outHtml ="<pre>" + cities + "</pre>";
+            var  outHtml ="<pre>" + students + "</pre>";
             
 			document.getElementById("jsonout").innerHTML = outHtml;
           }
