@@ -34,7 +34,7 @@ function getStudents()
 			   students[i].address.zip + "</td><td>" + students[i].major + "</td><td>" + 
 			   students[i].gpa + "</td></tr>"
 			}
-			document.getElementById("jsonout").innerHTML = outHtml;*/
+			document.getElementById("jsonout").innerHTML = outHtml;
           }
 	     }
 	   xht.open("GET", fileName, true);
