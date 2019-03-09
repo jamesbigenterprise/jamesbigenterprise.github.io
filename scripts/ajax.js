@@ -23,8 +23,7 @@ function getStudents()
 	     if(this.readyState == 4 && this.status == 200)
 	     {
 			var students = JSON.parse(xht.responseText);
-			console.log(xht.responseText);
-			console.log(students[0]);
+			console.log(students[0].first);
             /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             vay i;
 			for (i=0; i < students.lengh; i++)
