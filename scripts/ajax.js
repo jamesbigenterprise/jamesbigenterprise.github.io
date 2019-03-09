@@ -43,4 +43,3 @@ function getStudents()
 	   console.log(fileName);
 	} 
 	
-	<tr></tr>
