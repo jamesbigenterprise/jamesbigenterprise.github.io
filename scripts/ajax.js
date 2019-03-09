@@ -23,8 +23,8 @@ function getStudents()
 	     if(this.readyState == 4 && this.status == 200)
 	     {
 			var json = xht.responseText;
-			var second = JSON.parse(json);
-			console.log(second);
+			var students = JSON.parse(json);
+			console.log(students);
 
             /*var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
             vay i;
