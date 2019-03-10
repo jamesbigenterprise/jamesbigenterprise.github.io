@@ -20,8 +20,7 @@ section
 
 pre
 {
-   width: 35%;
-   margin: 0 auto;
+
 }
 pre#head
 {
@@ -52,7 +51,7 @@ pre#head
 #inpt
 {
    width: 35%;
-   margin: 0 auto;
+   margin: 20%;
 }
 
 #inpt button
