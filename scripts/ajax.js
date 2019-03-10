@@ -39,7 +39,7 @@ function myFunction(arr) {
   document.getElementById("jsonout").innerHTML = out;
 }	
 console.log("Over here");
-console.log(arr[0].first);
+console.log(myArr[0].first);
 }		
 
 
