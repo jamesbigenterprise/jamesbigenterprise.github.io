@@ -17,40 +17,8 @@ function getCities(country)
 	
 function getStudents()
 {
-	var fileName = document.getElementById("file").value;
-	   var xht = new XMLHttpRequest();
-	   xht.onreadystatechange = function(){
-	     if(this.readyState == 4 && this.status == 200)
-	     {
-			var json = xht.responseText;
-			var students = JSON.parse(json);
-			
-			var second = JSON.parse(xht.responseText);
-			console.log(second[0]);
-			printJson(second);
-          }
-	     }
-	   xht.open("GET", fileName, true);
-	   xht.send();
-	} 
-function printJson(data)
-{
-	
-   var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
-   var i;
-   for (i=0; i < data.length; i++)
-	{
-	  table += "<tr><td>" + data[i].first + " " + data[i].last + "</td><td>" + 
-	  data[i].address.city + "-" + data[i].address.state + " " + 
-	  data[i].address.zip + "</td><td>" + data[i].major + "</td><td>" + 
-	  data[i].gpa + "</td></tr>";
-	}
-	document.getElementById("jsonout").innerHTML = table;
-}		
-
-
-var xmlhttp = new XMLHttpRequest();
-var url = "myTutorials.txt";
+   var xmlhttp = new XMLHttpRequest();
+   var url = "json.txt";
 
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -65,8 +33,12 @@ function myFunction(arr) {
   var out = "";
   var i;
   for(i = 0; i < arr.length; i++) {
-    out += '<a href="' + arr[i].url + '">' + 
-    arr[i].display + '</a><br>';
+    out += '<p"' + arr[i].first + '">' + 
+    arr[i].first + '</p><br>';
   }
-  document.getElementById("id01").innerHTML = out;
-}
+  document.getElementById("jsonout").innerHTML = out;
+}	
+}		
+
+
+
