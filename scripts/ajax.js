@@ -25,7 +25,7 @@ function getStudents()
 			var json = xht.responseText;
 			var students = JSON.parse(json);
 			
-			var second = JSON.parse(json.contents);
+			var second = JSON.parse(xht.responseText);
 			
 			printJson(second);
           }
