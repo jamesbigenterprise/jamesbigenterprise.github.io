@@ -23,7 +23,7 @@ function getStudents()
 	     if(this.readyState == 4 && this.status == 200)
 	     {			
 			var students = JSON.parse(xht.responseText);
-			console.log(typeof(students));
+			console.log(typeof(students) + " Here is the object we are talking about " + students + " students.first == " + students.first);
           }
 		  if(this.readyState == 4 && this.status == 404)
 		  {
