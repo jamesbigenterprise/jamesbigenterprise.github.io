@@ -26,7 +26,7 @@ function getStudents()
 			var students = JSON.parse(json);
 			
 			var second = JSON.parse(xht.responseText);
-			
+			console.log(second[0]);
 			printJson(second);
           }
 	     }
@@ -35,7 +35,7 @@ function getStudents()
 	} 
 function printJson(data)
 {
-	console.log(data);
+	
    var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
    var i;
    for (i=0; i < second.length; i++)
