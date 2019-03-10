@@ -8,6 +8,8 @@ th,td {
 h1
 {
    color: rgb(0,83,160);
+   text-align: center;
+   
 }
 *{font-family: helvetica;}
 #btn
@@ -17,6 +19,7 @@ h1
    width: 75%;
    margin: 0 auto;
    text-align: center;
+   border-radious: 10px;
    
 }
 #btn button
