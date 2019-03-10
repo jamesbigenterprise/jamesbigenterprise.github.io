@@ -17,6 +17,12 @@ section
    margin: 10% 1%;
 }
 *{font-family: helvetica;}
+pre#head
+{
+   color: rgb(0,83,160);
+   text-align: center;
+   font-size: 1.5em;
+}
 #btn
 {
    display: grid;
