@@ -38,12 +38,12 @@ function printJson(data)
 	
    var  table = "<tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>";
    var i;
-   for (i=0; i < second.length; i++)
+   for (i=0; i < data.length; i++)
 	{
-	  table += "<tr><td>" + second[i].first + " " + second[i].last + "</td><td>" + 
-	  second[i].address.city + "-" + second[i].address.state + " " + 
-	  second[i].address.zip + "</td><td>" + second[i].major + "</td><td>" + 
-	  second[i].gpa + "</td></tr>";
+	  table += "<tr><td>" + data[i].first + " " + data[i].last + "</td><td>" + 
+	  data[i].address.city + "-" + data[i].address.state + " " + 
+	  data[i].address.zip + "</td><td>" + data[i].major + "</td><td>" + 
+	  data[i].gpa + "</td></tr>";
 	}
 	document.getElementById("jsonout").innerHTML = table;
 }		
