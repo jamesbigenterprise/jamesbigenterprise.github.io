@@ -23,6 +23,11 @@ pre#head
    text-align: center;
    font-size: 1.5em;
 }
+pre
+{
+   width: auto;
+   margin: 0 auto;
+}
 #btn
 {
    display: grid;
