@@ -6,7 +6,7 @@ function getCities(country)
 	     {
 	        //document.getElementById("input").innerHTML = xht.responseText;
 			var cities = xht.responseText;
-            var  table ="<pre>City             Population</pre><pre>" + cities + "</pre>";
+            var  table ="<h2>City               Population</h2><pre>" + cities + "</pre>";
             
 			document.getElementById("input").innerHTML = table;
           }
