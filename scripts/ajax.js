@@ -21,13 +21,9 @@ function getStudents()
 	   var xht = new XMLHttpRequest();
 	   xht.onreadystatechange = function(){
 	     if(this.readyState == 4 && this.status == 200)
-	     {
-			var json = xht.responseText;
-			var students = JSON.parse(json);
-			
-			var second = JSON.parse(xht.responseText);
-			console.log(second[0]);
-			printJson(second);
+	     {			
+			var students = JSON.parse(xht.responseText);
+			console.log(second["0"]);
           }
 		  if(this.readyState == 4 && this.status == 404)
 		  {
