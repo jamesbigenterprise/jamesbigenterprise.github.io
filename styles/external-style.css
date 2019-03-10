@@ -1,5 +1,6 @@
 table,th,td {
-  border : 1px solid black;
+  border : 1px solid rgb(0,43,84);
+  background-color: rgb(0,83,160);
   border-collapse: collapse;
 }
 th,td {
@@ -49,14 +50,19 @@ pre
 }
 #inpt
 {
-   width: 35%;
-   margin: 0 auto;
+  width: 30%;
+  margin: 0 auto;
 }
 
 #inpt button
 {
    border: 1px solid rgb(0,43,84);
    background-color: rgb(0,83,160);
-   font-size: 1em;
+   font-size: 1.5em;
    border-radius: 10px;
+}
+#jsonout
+{
+   width: 50%;
+   margin: 2% 25%;
 }

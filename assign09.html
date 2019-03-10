@@ -19,7 +19,21 @@
 	    <button class="countries" id="Canada" onclick="getCities('canada.txt')">Canada</button>
 	    <button class="countries" id="Russia" onclick="getCities('russia.txt')">Russia</button>
 	  </div>
-	  <div id="input"></div>
+	  <div id="input">
+	    <pre>
+New York            8,143,197
+Los Angeles            3,844,829
+Chicago		    2,842,518
+Houston		    2,016,582
+Philadelphia	    1,463,281
+Phoenix		    1,461,575
+San Antonio	    1,256,509
+San Diego	    1,255,540
+Dallas		    1,213,825
+San Jose	      912,332
+
+		</pre>
+	  </div>
 	</section>
 	<section>
 	  <h1>Type the file name</h1>
@@ -27,8 +41,12 @@
 	    <input type="text" id="file" ></input>
 	    <button onclick="getStudents()">Find file</button>
 	  </div>
-	  <table id="jsonout"></table>
+	  <table id="jsonout">
+	  <tr><th>Name</th><th>Adress</th><th>Major</th><th>GPA</th></tr>
+	  <tr><td>"First" "Last"</td><td>"city"-"state" "zip"</td><td>"major"</td><td>"gpa"</td></tr>
+	  </table>
 	  <br>
+
 	</section>
   </body>
   
