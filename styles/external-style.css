@@ -22,10 +22,11 @@ pre#head
    color: rgb(0,83,160);
    text-align: center;
    font-size: 1.5em;
+   margin: 5% 0 0 0;
 }
 pre
 {
-   width: auto;
+   width: 30%;
    margin: 0 auto;
 }
 #btn
