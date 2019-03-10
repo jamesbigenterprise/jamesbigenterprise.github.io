@@ -38,6 +38,8 @@ function myFunction(arr) {
   }
   document.getElementById("jsonout").innerHTML = out;
 }	
+console.log("Over here");
+console.log(arr[i].first);
 }		
 
 
