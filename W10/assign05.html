@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<meta name="author" content="Thiago_Alves">
+    <title>Mortgage Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles/external-style.css">
+	<script type="text/javascript" src="scripts/form_val.js">
+	</script>
+  </head>
+  <body onload="handleForm()">
+  <header>
+	</a>
+    <nav id="header_nav">
+	  <ul>
+	   
+	  </ul>
+	</nav>
+  </header>
+  <main>
+    <section class="form" >
+    <h2>Mortgage Calculator</h2>
+	<div id="errorD" ></div>
+	<form id="calcForm" action="mortgage.php" onsubmit="return submitIt();" method="get">
+	  <label for="APR">APR - Anual Percentage Rate</label>
+	  <br>
+	  <input id="apr" type="text" name="APR"/>   <!--[0-0.25] digit   -->
+	  <span id="aprTool" class="tip">* Insert a floating number in the format 0.00 from 00.00 to 25.00</span>
+	  <br>
+	  <label for="term">Loan Term</label>
+	  <br>
+	  <input id="term" type="text" name="term"/> <!--[0-40] digit frm 0 to 40 -->
+	  <span id="termTool" class="tip">*Insert a number from 0 to 40</span>
+	  <br>
+	  <label for="amount">Loan Amount</label>
+	  <br>
+	  <input id="amount" type="text" name="amount"/> <!--/d+ one or more digits -->
+	  <span id="amountTool" class="tip">* Insert a amount in the format 234567.90</span>
+	  <br>
+	  
+	  <label for="payment">Monthly Payment</label>
+	  <br>
+	  <input id="payment" type="text" name="payment"/> <!-- Display only-->
+	  <span id="payTool" class="tip"> Display only</span>
+	  <br>
+	  
+	  <br>
+	  <!-- When the javascript detects bad data it will twickle the class of the field-->
+	  
+	  <input type="reset" id="clear" value="Clear">
+	  <input type="submit" id="calculate" value="calculate">
+	  
+	</form>
+  </section> 
+  </main>
+  <aside>
+  </aside>
+  <footer>
+	<ul>
+	   
+	  </ul>
+	<small> Mortgage Calculator &copy; 2019 - Brigham Young University Idaho</small>
+  </footer>
+  </body>
+</html>
